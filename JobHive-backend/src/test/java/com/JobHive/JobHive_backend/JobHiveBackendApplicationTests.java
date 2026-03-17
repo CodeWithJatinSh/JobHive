@@ -1,0 +1,13 @@
+package com.JobHive.JobHive_backend;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class JobHiveBackendApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
