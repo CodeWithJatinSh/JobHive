@@ -33,7 +33,7 @@ public class ApplicationEntity {
     @Column(name = "RECRUITER_NOTE", columnDefinition = "TEXT")
     private String recruiterNote;                // Internal note by recruiter
 
-    // --- Timestamps ---
+    //*======================================= Timestamps ========================================================*/
     @Column(name = "APPLIED_AT", updatable = false)
     private LocalDateTime appliedAt = LocalDateTime.now();
 
@@ -45,7 +45,7 @@ public class ApplicationEntity {
         this.updatedAt = LocalDateTime.now();
     }
 
-    // --- Relationships ---
+    /*======================================Relationships======================================*/
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "APPLICANT_ID", nullable = false)
     private UserEntity applicant;                // Job Seeker
