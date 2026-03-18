@@ -12,7 +12,7 @@
 	<artifactId>JobHive-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>JobHive-backend</name>
-	<description>JobHive is a Job portal Fo Job and Recrutiers Built in Java springboot for backend and react for frontend</description>
+	<description>JobHive is a Job portal Fo Job and Recruiters Built in Java spring boot for backend and react for frontend</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -68,8 +68,25 @@
 			<artifactId>spring-boot-starter-webmvc-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- JWT -->
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-api</artifactId>
+			<version>0.12.3</version>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-impl</artifactId>
+			<version>0.12.3</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt-jackson</artifactId>
+			<version>0.12.3</version>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
